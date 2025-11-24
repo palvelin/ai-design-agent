@@ -4,151 +4,113 @@
 ## Establishing a Need
 
 ### Key themes
-- This phase involves framing the design problem by externalizing and organizing domain-specific knowledge to identify genuine user or stakeholder needs.
-- Designers must navigate bounded rationality by selectively gathering relevant information, often confronting incomplete or biased data.
-- Collaborative sense-making and reflective framing are critical, as initial problem definitions emerge from interpreting contextual cues and domain knowledge.
-- Ethical considerations and inclusivity begin to surface here, as recognizing diverse user perspectives and potential biases influences the scope and direction of the design need.
+- **Framing**: Designers engage in framing when they identify and validate a specific need or opportunity. This phase often begins with understanding the context, user needs, and potential gaps in existing solutions.
+- **Externalisation**: The use of different representation methods such as sketches, models, or narratives to articulate needs clearly and communicate them to others.
+- **Collaboration**: Engaging with stakeholders and experts to iteratively refine the understanding of the need, ensuring a holistic view of the problem space.
 
 ### Recent developments
-- AI facilitates richer externalization and representation of complex, domain-specific knowledge through tailored knowledge graphs and structured agents, helping designers to map problem spaces with greater precision.
-- Mixed reality technologies and interactive visualization tools enhance designers’ capacity for immersive engagement with contextual data, supporting deeper reflection-in-action during need establishment.
-- Advances in AI-driven data synthesis, such as generating diverse and equitable datasets, assist in broadening the inclusivity of initial design considerations and mitigating fixation on narrow problem framings.
-- Hierarchical task abstraction models help capture and simulate domain workflows, enabling designers to better understand procedural constraints and interdependencies early in the process.
-- Emerging frameworks for human-AI collaboration emphasize transparent, explainable AI interactions that maintain a balance of control, fostering co-evolution of problem definition through iterative negotiation between human insight and AI suggestions.
+- **AI-enhanced Knowledge Discovery**: AI tools facilitate the extraction and structuring of domain-specific knowledge, enabling designers to uncover and establish needs more efficiently and with greater accuracy.
+- **Data-driven Framing**: Techniques like latent representation and context compression empower designers to uncover hidden patterns and signals within large datasets, informing the framing of innovative design opportunities.
+- **Specialized AI Agents**: The development of domain-specific AI agents via hierarchical task abstraction provides designers with specialized insights and enhances the exploration of complex problem spaces.
 
 ### Open research questions
-- How do AI-enabled knowledge externalization tools influence designers’ framing and reframing of ambiguous or ill-structured needs?
-- In what ways can mixed reality and interactive data overlays cultivate richer reflection-in-action without overwhelming or distracting designers?
-- How might AI-generated diverse datasets or synthetic scenarios reduce cognitive fixation and broaden the search space during need articulation?
-- What models of human-AI collaboration best support the co-construction of design problems while preserving human agency and critical judgement?
-- How can ethical and geopolitical considerations around AI’s role in knowledge construction be integrated into early design cognition to ensure more responsible innovation?
+- How can design cognition theories of reflection-in-action be integrated with AI-driven knowledge tools to enhance the establishment of design needs?
+- In what ways does AI alter the landscape of co-evolution in problem and solution spaces during need establishment?
+- What frameworks can be developed to support the ethical integration of AI insights in the framing and validation of design needs, ensuring diversity and equity?
+- How can designers maintain agency and creativity when collaborating with AI systems in identifying and articulating needs?
 
 ## Analysis of Task
 
 ### Key themes
-- Designers engage in framing the problem space by identifying relevant task demands, often navigating competing sub-demands and contextual constraints.
-- Task analysis involves decomposing complex workflows into manageable components while recognizing interdependencies among agents, objects, and environment.
-- Reflection-in-action is critical as designers interpret ambiguous or noisy input data, requiring iterative sensemaking and validation.
-- Externalization through benchmarks, annotated datasets, or task representations supports shared understanding and evaluation of task complexity.
-- Collaboration and negotiation of task preferences emerge, especially in multi-agent or user-centered contexts, balancing autonomy and control.
+- **Framing and Reframing**: Designers continually define and redefine problem spaces, especially as they encounter new data or perspectives.
+- **Externalization**: Tools and visual aids help designers externalize their thinking, making abstract ideas tangible and facilitating better analysis.
+- **Reduction of Cognitive Load**: Automation in analysis tasks enables designers to focus on higher-level decision-making by offloading repetitive, data-intensive tasks.
+- **Interdisciplinary Collaboration**: Effective task analysis often requires input from multiple disciplines, enhancing the richness of the insights generated.
 
 ### Recent developments
-- AI-driven contextualization enables dynamic and position-aware task optimization, allowing designers to adapt analysis to nuanced environments (e.g., peptide design, navigation).
-- Integration of multi-dimensional data (visual, spatial, symbolic) facilitates richer task representations, supporting human-object interaction insights and multimodal fusion.
-- Large-scale foundation models and benchmarks are shifting task analysis from static to operational reliability, emphasizing real-world efficacy over narrow accuracy.
-- Embodied and Bayesian approaches in assistive technologies illustrate the integration of cognitive principles in continuous intent prediction and motion control, grounding task analysis in user embodiment.
-- Formalization of decision-making, including multi-agent coordination and preference integration, enhances the systematic capture of complex task interrelations.
-- Advances in real-time data processing (e.g., optical correction, aerosol mass spectrometry) demonstrate the move towards on-the-fly task interpretation supporting timely decisions.
-- Ethical and participatory frameworks emphasize the role of diverse stakeholder perspectives in defining task parameters and assessing fairness in data representation.
+- **AI-Enhanced Decision Support**: AI systems now offer more accurate and reliable classification and tracking, such as in medical imaging, freeing designers to engage more deeply with strategic aspects of task analysis.
+- **Real-Time Analysis**: Advances in AI enable real-time data interpretation, aiding designers in dynamic and rapidly changing environments like sports analytics or remote sensing.
+- **Contextual and Multimodal Integration**: AI models, such as transformers enabling pattern recognition across diverse data types, facilitate a deeper understanding of complex, multimodal contexts.
+- **Ethical and Inclusive Data Practices**: AI-driven methods for generating diverse datasets advance equitable consideration in design processes, addressing biases and promoting fairness.
 
 ### Open research questions
-- How do designers balance the evolving granularity of task decomposition with the need for holistic understanding in ambiguous or noisy contexts?
-- In what ways can AI-augmented analysis support designers in negotiating task preferences and managing competing priorities within multi-agent or collaborative settings?
-- How might dynamic and embodied representations of task demands reshape reflection-in-action during early design framing?
-- What mechanisms can ensure transparency and accountability when AI systems influence task framing and decision-making autonomy?
-- How can benchmarks and datasets better capture operational reliability and ethical considerations without reducing complex tasks to oversimplified metrics?
-- To what extent do externalized task models facilitate or constrain designer creativity and flexibility amid changing user or environmental conditions?
+- How can designers leverage AI to improve their cognitive framing and reframing capabilities in task analysis?
+- In what ways might AI alter traditional roles and responsibilities within interdisciplinary design teams?
+- What strategies can ensure that AI's ability to reduce cognitive load does not inadvertently lead to reliance or skill degradation in designers?
+- How can design researchers ensure that AI aids, rather than hinders, the ethical and inclusive analysis of tasks within diverse contexts?
 
 ## Concept Design
 
 ### Key themes
-- Concept design involves iterative framing and reframing of design problems through externalisation of ideas, often as sketches, models, or spatial configurations.
-- Designers engage in reflection-in-action, adjusting their concepts responsively based on emergent insights.
-- Collaboration and multi-modal representation play a critical role, enabling diverse viewpoints to shape the evolving concept.
-- Problem-solution co-evolution is central: as the design space is explored, both problem understanding and solution possibilities expand and influence each other.
-- Maintaining openness to divergent ideas while avoiding fixation on early concepts supports innovation and creativity in this phase.
+- **Externalisation and Representation**: Concept design involves the translation of abstract ideas into external forms, such as sketches or models. This externalisation is crucial for refining and communicating concepts.
+- **Framing and Reframing**: Designers continuously frame and reframe problems, exploring divergent solutions before converging on a feasible concept.
+- **Fixation and Overcoming Bias**: Identifying and mitigating fixation—getting stuck in familiar patterns—is critical to exploring innovative ideas.
+- **Collaboration and Multidisciplinary Teams**: Effective collaboration integrates diverse perspectives, enhancing the richness of the concept space through co-evolution of ideas.
 
 ### Recent developments
-- AI tools enabling rapid generation and retrieval-enhanced synthesis of 3D meshes, spatial layouts, and environments support externalisation and exploration of volumetric design ideas with less manual effort. This accelerates the iterative cycles of model refinement and variation.
-- Text-to-3D world generation lowers technical barriers, expanding the pool of contributors able to engage in early-stage spatial storytelling and environment conceptualisation, thus democratizing participation.
-- Context-aware AI agents and dynamic optimization frameworks introduce new ways to support situated design adjustments, enabling designers to explore design alternatives that respond to evolving constraints without restarting from scratch.
-- Advances in motion planning and physics-aware verification embed a layer of embodied cognition and physical plausibility earlier in concept exploration, supporting reflection on real-world feasibility directly within generative outputs.
-- Emerging ontologies and agent architectures provide frameworks to formalize and simulate design rationality and multi-agent collaboration, potentially enriching negotiation and coordination during concept development.
-- Mixed reality and interactive live streaming enrich co-design and stakeholder engagement through immersive, participatory experiences that make early concepts tangible and socially situated.
-- Efforts addressing dataset diversity and equity highlight a growing awareness that conceptual design tools must incorporate social and cultural inclusivity as foundational considerations.
+- **Enhanced Knowledge Extraction**: AI facilitates the aggregation of domain-specific knowledge, aiding designers in navigating vast information spaces efficiently.
+- **AI-Driven Diversity and Inclusivity**: Generative models are employed to create diverse datasets, enabling the design of more inclusive and equitable solutions.
+- **Real-Time Interaction and Feedback**: AI enhances designers' ability to receive immediate feedback through simulations and analyses, streamlining the iterative process.
+- **Harnessing AI for Creative Exploration**: AI tools can help overcome design fixation by suggesting alternative approaches and exploring a broader range of possibilities.
+- **Structural Insights and Optimization**: Advanced AI techniques, like hierarchical task abstraction, enable structured exploration of complex concept design phases, aligning them with specific domain requirements.
 
 ### Open research questions
-- How does the integration of AI-driven generation influence the reflective practice of sketching and modelling? Does it shift the balance between intuitive exploration and analytical evaluation?
-- In what ways can AI augment designers’ situational awareness of problem contexts while retaining human agency in framing and reframing?
-- How might concept design benefit from agentic AI systems that can autonomously propose, critique, and negotiate design alternatives within multi-stakeholder settings?
-- What are effective strategies to prevent AI-supported ideation tools from inducing fixation or premature convergence on suboptimal design paths?
-- How do embodied and physics-aware generative systems reshape designers’ engagement with materiality and feasibility during concept generation?
-- To what extent can mixed reality tools transform collaboration dynamics and reflection-in-action by extending ideation beyond traditional studios?
-- How can inclusivity and ethical considerations be embedded into AI-supported conceptual design processes to ensure socially equitable innovation?
+- How can AI systems better support the framing and reframing process inherent in concept design?
+- In what ways might AI tools help mitigate cognitive biases and fixation during early stages of design ideation?
+- How can AI enhance the co-evolution of ideas in multidisciplinary teams, fostering collaboration and innovation?
+- What mechanisms can be developed to ensure that AI-driven insights are seamlessly integrated into the designers' creative workflow?
+- How might advancements in AI-driven externalisation tools transform traditional sketching and prototyping practices in concept design?
 
-## Embodiment design
+## Embodiment Design
 
 ### Key themes
-- Designers engage deeply with the spatial and physical instantiation of concepts, affecting how ideas evolve through tangible form.
-- Embodiment involves iterative externalisation of shapes and structures, where designers balance fidelity, feasibility, and expressiveness in 3D representations.
-- Incremental editing and refinement of digital forms support reflection-in-action, enabling designers to revisit and reshape problem and solution spaces dynamically.
-- Collaboration with domain-specific tools and agents scaffolds complex workflows, emphasizing task structure understanding.
-- Representation of physical properties and constraints (optical aberrations, mechanical dynamics) is critical for aligning form with functional behavior.
-- Engagement with interactive and mixed-reality environments augments designers’ perceptual immersion, fostering richer contextualisation of embodied designs.
+- **Cognitive Framing**: Designers approach embodiment design by framing the problem through the lens of form, function, and interaction, shaping how solutions are explored and iterated.
+- **Reflection-in-Action**: Designers engage in a dynamic process of reflection while prototyping and testing physical models, enabling real-time adjustments and refinements.
+- **Co-evolution of Problem and Solution**: This phase involves simultaneous development and refinement of both the problem understanding and the solution as physical prototypes materialize.
 
 ### Recent developments
-- AI-driven mesh generation and retrieval-augmented frameworks enable more fluid, incremental manipulation of 3D forms, reducing cognitive load tied to maintaining global consistency.
-- Text-to-3D scene generation tools democratize access to embodiment design by lowering the barrier of 3D modeling skills, allowing abstract framing to translate more directly into spatial form.
-- Context-aware optimization frameworks in peptide design illustrate how dynamic, position-sensitive feedback can support embodiment tasks beyond traditional physical artifacts.
-- Hierarchical task abstraction mechanisms facilitate better alignment of AI agents with the procedural and structural complexity inherent in embodiment workflows.
-- Mixed Reality integration enriches embodiment by overlaying interactive layers onto physical or digital artefacts, expanding the reflective conversation with the design context.
-- Advances in model predictive control and physics-aware generative techniques provide real-time, context-sensitive corrections and enhancements, bridging the gap between virtual models and their potential physical behaviors.
-- Efficient model pruning and edge deployment methods ensure embodiment tools can be more accessible in varied contexts, supporting situated design activities.
-- Novel computing architectures tailored to energy efficiency suggest future embodiment tools may increasingly support complex computational simulations in situ, enhancing real-time feedback.
+- **AI-Assisted Optimization**: AI tools, such as deep reinforcement learning, enable designers to evaluate and optimize complex design parameters, facilitating more informed decision-making during prototyping.
+- **Enhanced Prototyping**: Real-time detection and adaptive control systems, enhanced by AI, support rapid prototyping by providing immediate feedback and facilitating iteration on design concepts.
+- **Integration of AI in Design Tools**: Tools leveraging hierarchical task abstraction and specialized agents are enhancing the procedural workflow of designing, allowing for more structured and targeted solution development.
 
 ### Open research questions
-- How does incremental AI-supported mesh generation influence designers’ reflective cycles and evolving problem framing during embodiment?
-- In what ways can AI-mediated retrieval and sketch-guided verification reduce fixation effects while preserving designer agency and conceptual diversity?
-- How might designers best integrate mixed reality overlays with traditional embodiment representations to enrich knowing-in-action without cognitive overload?
-- What task structures and abstraction layers most effectively scaffold human-AI collaboration in complex, embodied design tasks involving multiple constraints?
-- How can AI systems dynamically balance fidelity to physical laws and allowance for creative exploration during real-time embodiment iteration?
-- What forms of externalisation and representation best support collaborative embodiment design when mediated by adaptive AI agents or domain-specific tools?
-- How do design cognition strategies change when embodiment moves beyond physical product artifacts into molecular or quantum domains that require distinct material reasoning?
+- How can designers effectively integrate AI-driven insights with traditional design intuition and experience to enhance embodiment design outcomes?
+- In what ways does the introduction of AI tools in the embodiment phase influence the reflection-in-action process traditionally employed by designers?
+- How can design cognition frameworks be adapted to incorporate AI-enhanced externalization methods in real-time prototyping?
+- What role does AI play in mitigating or exacerbating design fixation during the embodiment phase, and how can it be managed?
 
-## Detail design
+## Detail Design
 
 ### Key themes
-- Designers refine and specify solutions with high fidelity, requiring attention to fine-grained constraints and affordances.
-- This phase demands intensive reflection-in-action, where designers iteratively test, adjust, and resolve emergent technical and form-related issues.
-- External representations (detailed drawings, prototypes) play a critical role in making implicit knowledge explicit and in supporting collaborative validation.
-- Managing complexity and preventing fixation on suboptimal details is central, necessitating strategies for flexible reframing within a bounded problem space.
+- In the detail design phase, designers engage in deep exploration and refinement of solutions. It involves intricate decision-making, attending to constraints, and integrating diverse elements into coherent wholes.
+- Designers employ reflection-in-action to iteratively test and refine components, dynamically adjusting their approach based on feedback and emerging insights.
+- The focus is on externalising thought processes through detailed sketches, prototypes, and digital models, allowing for better communication and collaboration with stakeholders.
 
 ### Recent developments
-- Advances in AI systems training enable faster, more capable generative models that can support detailed design exploration through richer, context-aware suggestions.
-- Large-scale models trained on high-performance platforms allow integration of extensive domain knowledge, assisting designers in navigating intricate technical specifications and variant combinations.
-- These developments facilitate real-time augmentation of reflection-in-action by providing on-demand, diverse alternatives or by simulating the consequences of design choices at a detailed level.
-- The underlying hardware improvements improve responsiveness and scalability of intelligent design assistants, making them more practical for iterative, detail-oriented workflows.
+- AI, through enhanced modeling capabilities, is supporting designers by automating complex computations, thus freeing cognitive resources for creative exploration.
+- Techniques like mixture-of-experts (MoE), which distribute computational tasks efficiently, help designers handle complex multi-component systems, optimizing both time and the quality of solutions.
+- The development of robust AI systems on advanced hardware platforms means designers can rely on faster iteration cycles, supporting a more fluid design process.
 
 ### Open research questions
-- How do AI-augmented tools influence designers' reflective practice when refining complex details? Do they foster deeper understanding or risk automation bias?
-- In what ways can AI support externalization strategies during the detail design phase without constraining creative exploration or causing fixation?
-- How can collaborative negotiation of design details be mediated to balance AI-generated proposals with diverse human expert inputs?
-- What cognitive shifts occur when designers interact with AI systems capable of handling large problem spaces and multiple interconnected constraints in real time?
+- How can designers best integrate AI tools into their workflow to enhance reflection-in-action and avoid cognitive fixation?
+- In what ways can AI support the co-evolution of problem and solution spaces during detail design?
+- How might the use of advanced AI systems affect collaboration among multidisciplinary teams, and what new forms of communication might be needed?
+- What strategies can help designers maintain control over their design intent when relying on AI-driven decisions and suggestions?
 
 ## Implementation
 
 ### Key themes
-- Implementation involves the translation of design concepts into working artifacts, emphasizing performance, reliability, and real-world constraints.
-- Designers engage in iterative testing, refinement, and adaptation as they negotiate between domain-specific requirements and operational realities.
-- There is a strong focus on externalizing procedural knowledge through hierarchical task structures and modularity to manage complexity.
-- Reflection-in-action is evident in troubleshooting and correcting system behaviors during deployment, often requiring adjustment of control strategies or integration methods.
-- Collaboration with multi-agent or embedded systems necessitates coordination and the alignment of mental models, especially for dynamic and interactive components.
+- **Cognitive Support in Execution**: Designers often engage in problem-solving activities that require real-time reflection and adaptation. Enhancing diagnostic reliability and procedural correctness through AI tools supports designers in maintaining focus on critical decision-making processes.
+- **Domain-Specific Knowledge Utilization**: The need for domain-specific data and tools emphasizes the role of contextual knowledge in guiding design decisions, highlighting Schön’s concept of "knowing-in-action."
+- **Operational Reliability and Performance Assessment**: There is a shift towards evaluating the reliability and robustness of systems in operational contexts, which aligns with a reflective practice that considers both intended and emergent outcomes.
 
 ### Recent developments
-- AI enables progressive automation of mesh generation and design geometry, supporting incremental editing without restarting the design cycle, which aligns with the reflective iteration process.
-- Domain-specific agents constructed through hierarchical abstraction facilitate more structured workflows, easing designer cognitive load by externalizing task complexity and improving procedural correctness.
-- Autonomous decision-making systems now accommodate user preferences and multi-demand scenarios, enhancing embodied cognition in assistive and interactive technologies.
-- Advances in benchmarks assessing operational reliability highlight the shift from mere functional correctness toward trustworthiness and resilience, reflecting the designer’s concern for robust real-world performance.
-- Methods integrating retrieval and pre-trained knowledge libraries support rapid adaptation to new domains, reducing fixation by allowing designers to recover relevant past solutions during implementation.
-- Visual and sensor data processing improvements (e.g., in optical corrections, environmental monitoring) indicate tighter coupling between perception and action within design artifacts, fostering seamless reflectivity on system performance.
-- Emerging quantum and Bayesian learning techniques suggest new frontiers for handling uncertainty and incomplete data in deployment, implying shifts in how designers engage with real-time system behaviors.
-- Mixed reality and interactive streaming tools augment user engagement with implemented designs, indicating expanded roles for situated presentation and reflection in cultural heritage contexts.
+- **AI-Assisted Optimization**: AI is increasingly integrated into implementation processes, enabling designers to refine tasks efficiently. For instance, structured pruning and quantum techniques help optimize complex design tools, allowing for efficient resource management.
+- **Agent-Based Systems**: The use of hierarchical task abstraction and reinforcement learning facilitates better alignment of tasks with designer intentions, empowering designers to manage complexity by automating routine aspects of implementation.
+- **Cross-Disciplinary Transfer**: AI advancements, seen in medical imaging and environmental monitoring, provide insights into adaptive systems that improve upon traditional execution frameworks, fostering innovation through cross-contextual learning.
 
 ### Open research questions
-- How does the introduction of AI-driven hierarchical agents influence designers’ reflective control over complex workflows and their ability to adapt plans in real time?
-- In what ways might AI-augmented externalization methods change the nature of troubleshooting and iteration during implementation, particularly in embedded or multi-agent systems?
-- How can designers balance automation with the need for serendipitous reflection-in-action to prevent premature commitment in implementation?
-- What cognitive strategies support designers’ interpretation and integration of AI-generated procedural knowledge without losing domain expertise or critical oversight?
-- How might mixed reality and interactive visualizations during implementation reshape designers’ situational awareness and collaborative communication with stakeholders?
-- What frameworks can better capture the tacit knowledge embedded in operational reliability decisions, and how can these be integrated with AI systems for continuous improvement?
-- How does the interplay between task abstraction and embodied decision-making impact creativity and error recovery in assistive and interactive design implementations?
+- How can AI systems be designed to support dynamic reflection and adaptation throughout the implementation phase?
+- What mechanisms can ensure that AI-enhanced design tools promote creativity rather than constrain it through over-reliance on automated processes?
+- How do we evaluate the effectiveness of AI tools in the seamless integration of domain-specific knowledge without inducing cognitive overload for designers?
+- In what ways can AI technologies be harnessed to foster collaboration among diverse teams during the complex implementation stages of design projects?

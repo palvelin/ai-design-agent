@@ -46,3 +46,23 @@ def update_jsonl_db(path: str, new_records: List[Dict], id_key: str = "id") -> N
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
     print(f"[utils.update_jsonl_db] Database now has {len(sorted_records)} records.")
+
+    import json
+from typing import List, Dict
+
+def load_jsonl_db(db_path: str) -> List[Dict]:
+    """
+    Lataa JSONL-tietokannan listaksi dict-olioita.
+    Jos tiedostoa ei ole, palauttaa tyhjän listan.
+    """
+    records: List[Dict] = []
+    try:
+        with open(db_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                records.append(json.loads(line))
+    except FileNotFoundError:
+        pass
+    return records
