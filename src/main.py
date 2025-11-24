@@ -4,7 +4,8 @@ from .utils import update_jsonl_db, load_jsonl_db
 from .update_knowledge_base import update_knowledge_markdown
 from .fetch_bibtex import load_bibtex
 from .fetch_bibtex_url import download_paperpile_bib
-
+from dotenv import load_dotenv
+load_dotenv()
 
 def main():
     structured_papers = []
