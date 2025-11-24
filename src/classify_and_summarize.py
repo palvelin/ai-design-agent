@@ -74,7 +74,7 @@ def classify_single_paper(paper: Dict) -> Dict:
     }
 
     completion = client.responses.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         input=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": json.dumps(payload, ensure_ascii=False)},

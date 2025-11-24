@@ -69,7 +69,7 @@ def call_llm_markdown(system_prompt: str, user_prompt: str) -> str:
     """Call OpenAI model and return markdown text."""
     client = get_client()
     response = client.responses.create(
-        model="gpt-4.1-mini",  # voit vaihtaa isompaan malliin tarvittaessa
+        model="gpt-4o",  # voit vaihtaa isompaan malliin tarvittaessa
         input=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
