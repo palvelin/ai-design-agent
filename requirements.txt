@@ -1,2 +1,3 @@
 openai>=1.12.0
 python-dotenv
+feedparser
