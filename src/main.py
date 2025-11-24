@@ -6,7 +6,7 @@ from .update_knowledge_base import update_knowledge_markdown
 
 def main():
     # 1) Hae uudet paperit arXivista (viimeiset 2 päivää, max 40 tulosta)
-    raw_papers = fetch_new_papers(days_back=2, max_results=40)
+    raw_papers = fetch_new_papers(days_back=365, max_results=30)
 
     if raw_papers:
         # 2) Rikasta LLM:llä (design_phase jne.)

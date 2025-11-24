@@ -74,6 +74,7 @@ def call_llm_markdown(system_prompt: str, user_prompt: str) -> str:
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ],
+#        response_format={"type": "json_object"}
     )
     # responses API: output -> list, then content -> list, then .text
     return response.output[0].content[0].text
@@ -118,25 +119,42 @@ def generate_phase_markdown(phase: str, papers: List[Dict]) -> str:
     context = build_phase_context_snippet(papers)
 
     system_prompt = """
-You are an expert in design research and AI, familiar with Howard et al. (2008) 6-stage design process.
-You receive a list of design research papers that relate to ONE specific design phase.
-Using this list, write a concise but insightful Markdown section.
+You are an expert in design cognition and design research, familiar with:
+- Simon (bounded rationality, problem spaces)
+- Schön (reflection-in-action, knowing-in-action)
+- Cross, Dorst, Gero and contemporary design cognition work
+- Industrial design practice and studio-based work
 
-The section MUST be structured like this:
+You are NOT writing for computer scientists. 
+Assume the reader is an experienced design researcher (especially industrial design) 
+with limited interest in ML technicalities.
+
+You receive a list of papers related to ONE design phase. 
+Many of them may use AI/ML methods.
+
+Your job is to interpret these papers through a DESIGN COGNITION lens, not an ML lens.
+
+Write a concise Markdown section with this structure:
 
 ## {phase_name}
 
 ### Key themes
-- ...
+- Focus on how designers think, act, decide, or collaborate in this phase.
+- Avoid ML jargon unless truly necessary.
 
 ### Recent developments
-- ...
+- Explain how AI is changing design cognition or practice in this phase.
+- When you mention technical methods (e.g. transformers, RL, diffusion), 
+  explain in one short phrase what they enable for designers.
 
 ### Open research questions
-- ...
+- Pose questions about design cognition, creativity, collaboration, and tools.
+- Avoid technical implementation details.
 
-Write clearly and analytically, no fluff.
-Assume the reader is an experienced design researcher.
+Style:
+- Clear, analytic, no fluff.
+- Short paragraphs and bullet points.
+- Prefer design-cognition language (e.g. framing, reflection, co-evolution, fixation, externalisation) over ML jargon.
 """
     user_prompt = f"""
 This design phase: {phase}
@@ -179,34 +197,44 @@ def generate_overview_markdown(papers: List[Dict]) -> str:
     context = "\n".join(context_lines)
 
     system_prompt = """
-You are an expert in AI and design research.
-You receive a sample of structured information about many papers across the design process.
+You are a design cognition researcher summarising recent AI & design work 
+for an audience of experienced design researchers (industrial design, interaction design), 
+not computer scientists.
 
 Write a high-level Markdown overview called:
 
 # AI & Design Research – Living Overview
+
+Your focus:
+- How AI is shaping design cognition, design practice, and designer–tool relationships.
+- Connect to well-known design cognition ideas (without long history lessons):
+  Simon (problem–solution space), Schön (reflection-in-action), Dorst (frame creation),
+  Gero (FBS, design protocols), etc.
 
 Structure your answer like this:
 
 # AI & Design Research – Living Overview
 
 ## Big picture
-- ...
+- Emphasise design cognition and practice, not algorithms.
 
 ## Where AI is entering the design process
-- ...
+- Describe roles of AI in different design phases, in designer-centred terms.
 
 ## Emerging research themes
-- ...
+- Use language like: external representations, co-evolution, fixation, 
+  exploration vs exploitation, human–AI co-creation, material thinking.
 
 ## Methodological patterns
-- ...
+- Talk about protocol studies, lab vs studio settings, think-aloud, 
+  diary studies, research-through-design, etc.
+- Mention ML methods only briefly and only when needed to understand the study.
 
 ## Gaps and opportunities
-- ...
+- Focus on what we still don’t know about designers’ thinking and practice with AI.
 
-Write as if this file is updated daily; avoid referencing specific dates.
-Focus on stable structure and slowly evolving trends, not individual papers.
+Write clearly and analytically, in short paragraphs. 
+Avoid technical ML jargon and mathematical detail.
 """
     user_prompt = f"""
 Here is a sample of papers with year, title, phases and short summaries:
@@ -216,7 +244,58 @@ Here is a sample of papers with year, title, phases and short summaries:
 Using this, write the overview as specified in the system prompt.
 """
 
-    return call_llm_markdown(system_prompt, user_prompt)
+    # Generate the LLM-written overview
+    overview_md = call_llm_markdown(system_prompt, user_prompt)
+
+    # ---------- FOUNDATIONS BLOCK INSERTION ----------
+    FOUNDATIONS_BLOCK = """
+## Foundations in Design Cognition
+
+This living overview builds on established traditions in design cognition. 
+The foundational assumptions come from classic work such as:
+
+- **Herbert A. Simon** – design as search in an ill-structured problem–solution space; bounded rationality; heuristics instead of optimization.
+- **Donald Schön** – reflection-in-action and knowing-in-action; the iterative “conversation with materials” that shapes problem framing and solution development.
+- **Nigel Cross** – designerly ways of knowing; visual and material thinking; expertise and sketching as cognitive scaffolding.
+- **Kees Dorst** – frame creation; co-evolution of problem and solution spaces; abductive reasoning as the core of design.
+- **John S. Gero** – FBS (Function–Behaviour–Structure) transformations; situated cognition; design protocol analysis.
+
+Alongside these canonical perspectives, this overview also assumes familiarity with 
+**design space thinking**:
+
+- **Exploration vs exploitation** – expanding versus narrowing the design space; broad search for possibilities versus refinement and optimization.
+- **Informing vs filtering** – representations, feedback, and tools can *inform* designers by increasing the visibility of possibilities, or *filter* the space by constraining choices.
+- **External representations** – sketches, models, prototypes, diagrams, and prompts act as cognitive partners, shaping what designers see, consider, and reinterpret.
+- **Role of prototyping** – physical and digital prototypes support embodied cognition, exploratory experimentation, and rapid reframing through feedback from materials.
+
+This overview also draws on research on **creative cognition** in design:
+
+- **Divergence** – generating many, varied ideas (fluency), shifting between categories (flexibility), and reaching unusual or remote associations (originality).
+- **Convergence** – evaluating, selecting, structuring, and developing ideas (elaboration); reducing the design space without premature fixation.
+- **Fixation & defixation strategies** – the tension between creativity, precedence, and reuse; how tools and representations expand or restrict the search space.
+
+Industrial design practice often integrates these principles in fluid, iterative processes where designers move between:
+
+- framing and reframing  
+- divergent concept generation  
+- convergent interpretation and decision-making  
+- prototyping and material exploration  
+- negotiating constraints, opportunities, and meaning  
+
+The synthesis below examines how **recent AI-supported design research** interacts with these foundational ideas:  
+whether it expands or contracts the design space, alters framing activities, affects exploration/exploitation balance, introduces new forms of external representation, or reshapes the dynamics of reflective practice and creativity.
+    """.strip()
+
+    # Prepend the foundations section and preserve the remainder of the LLM output
+    overview_md = (
+        "# AI & Design Research – Living Overview\n\n"
+        + FOUNDATIONS_BLOCK
+        + "\n\n"
+        + overview_md.split("\n", 1)[-1]
+    )
+    # ---------- END FOUNDATIONS BLOCK INSERTION ----------
+
+    return overview_md
 
 
 # -----------------------

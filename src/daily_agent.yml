@@ -23,6 +23,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Sync latest Paperpile BibTeX
+        env:
+            PAPERPILE_BIB_URL: ${{ secrets.PAPERPILE_BIB_URL }}
+        run: |
+          mkdir -p data
+          echo "[workflow] Downloading latest Paperpile BibTeX..."
+          curl -L "$PAPERPILE_BIB_URL" -o data/paperpile.bib
+          echo "[workflow] Saved to data/paperpile.bib"
+          ls -l data
+
       - name: Run agent
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
