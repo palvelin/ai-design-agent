@@ -32,6 +32,11 @@ jobs:
           curl -L "$PAPERPILE_BIB_URL" -o data/paperpile.bib
           echo "[workflow] Saved to data/paperpile.bib"
           ls -l data
+      - name: Debug OPENAI_API_KEY prefix
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          echo "GITHUB OPENAI_API_KEY prefix: ${OPENAI_API_KEY:0:10}"
 
       - name: Run agent
         env:
