@@ -37,40 +37,17 @@ The synthesis below examines how **recent AI-supported design research** interac
 whether it expands or contracts the design space, alters framing activities, affects exploration/exploitation balance, introduces new forms of external representation, or reshapes the dynamics of reflective practice and creativity.
 
 
-## Big Picture
+## Big picture
+AI is increasingly influencing design cognition and practice, reshaping how designers approach problem-solving and engage with tools. Concepts from design cognition, such as Simon's problem–solution space and Schön's reflection-in-action, are now intersecting with AI capabilities, offering new paradigms for understanding and executing design tasks. This interaction is redefining the designer-tool relationship, allowing for more nuanced co-creation processes.
 
-Artificial Intelligence (AI) is redefining the landscape of design cognition and practice. It offers new possibilities for how problems and solutions are framed, explored, and realized, extending our understanding of traditional design cognition theories from key figures like Simon, Schön, Dorst, and Gero. This overview explores how AI enhances design cognition, affects design processes, and reshapes the dynamic between designers and their tools, moving beyond the mechanics of algorithms to the insights they enable in design contexts.
+## Where AI is entering the design process
+AI is being integrated across different phases of design. In the concept design phase, AI tools enhance exploration by generating diverse alternatives, reflecting Gero's notion of the co-evolution of problem and solution spaces. During embodiment and detail design, AI assists in refining and optimizing designs, addressing the complexities and iterations typical of these stages. Additionally, AI facilitates the implementation phase by automating and accelerating processes traditionally dependent on manual intervention.
 
-## Where AI is Entering the Design Process
+## Emerging research themes
+Research is highlighting several critical themes, including human–AI co-creation and material thinking, where AI tools act as collaborators in generating new design possibilities. External representations, such as generative sketches, support the exploration and exploitation balance, helping designers navigate potential fixation. Co-evolution models are being revisited in the context of AI, emphasizing the dynamic interplay between evolving problem definitions and solutions.
 
-AI is integrating into various phases of the design process, creating new roles for itself as a collaborator, facilitator, and enhancer of creativity. During the early stages, AI aids in conceptual design—generating diverse ideas and stimulating frame creation as per Dorst's theories. As the process progresses, AI contributes to exploration and refinement, aligning with Gero's Function-Behaviour-Structure (FBS) model, by providing computational power to evaluate a vast array of alternatives. Moreover, during implementation, AI systems optimize designs based on real-world constraints, automating repetitive tasks, and enabling designers to engage in Schön's reflection-in-action more effectively.
+## Methodological patterns
+Design research employs various methodologies to study AI's impact. Protocol studies and think-aloud methods reveal cognitive processes in real-time, aligning with Dorst's frame creation ideas. Lab vs. studio settings provide insights into how AI tools operate in controlled versus realistic environments. Diary studies capture longitudinal experiences of designers, while research-through-design offers a reflective route for integrating AI into design practice. Machine learning methods are used mainly to underpin these studies, focusing on usability and designer interaction.
 
-## Emerging Research Themes
-
-Several key themes are emerging where AI intertwines with design cognition:
-
-- **External Representations**: AI systems provide dynamic and rich external representations that aid designers in visualizing and manipulating complex data.
-- **Co-evolution**: AI facilitates co-evolution of problem and solution spaces, a fundamental aspect outlined by Simon.
-- **Fixation and Exploration vs. Exploitation**: AI helps mitigate design fixation by suggesting novel, often non-intuitive solutions, supporting a balance between exploration of new ideas and exploitation of known ones.
-- **Human–AI Co-Creation**: AI systems act as co-creators, offering new potential for narrative and material thinking, enhancing the dialogue between human and machine creativity.
-
-## Methodological Patterns
-
-Research into AI’s impact on design employs a mix of traditional and innovative methods:
-
-- **Protocol Studies**: These help dissect the cognitive processes of designers using AI tools, drawing insights from Gero's design protocols.
-- **Lab vs. Studio Settings**: Experiments range from controlled lab studies to more naturalistic studio environments, examining how AI tools influence creative processes.
-- **Think-Aloud and Diary Studies**: These methods capture the reflective practices of designers, resonating with Schön’s reflective practice theories.
-- **Research-through-Design**: AI-driven tools become vehicles for speculative design studies, pushing boundaries of what design can achieve.
-- While machine learning methods are mostly used behind the scenes, their influence on cognitive processes becomes a subject of interest in such studies.
-
-## Gaps and Opportunities
-
-Despite advancements, there remain significant gaps in our understanding of AI's role in design cognition and practice:
-
-- **Designers’ Thinking Patterns**: Little is known about how designers internalize and integrate AI-generated suggestions into their workflows.
-- **Long-term Impact**: The long-term effects of dependence on AI tools for creativity and problem-solving remain underexplored.
-- **Ethical Considerations**: How ethical considerations influence AI-driven design processes, especially in high-stakes industries, needs deeper investigation.
-- **Tool Transparency and Interpretability**: Ensuring AI systems are transparent and interpretable to designers is crucial for fostering trust and effective use.
-
-These gaps highlight opportunities for further research that could advance our understanding of the dynamic interplay between human designers and AI systems in creating innovative, thoughtful, and effective design solutions.
+## Gaps and opportunities
+Significant gaps remain in understanding the cognitive shifts induced by AI integration in design. How AI alters reflection-in-action during design tasks or influences the perception of the solution space is still underexplored. There's also a need to investigate the balance between AI-driven exploration and designer-led exploitation, especially in avoiding creative fixation. Furthermore, understanding the ethical implications of AI in design and its impact on creativity and innovation presents an open area for inquiry. Opportunities exist to develop frameworks that better integrate AI into established design methodologies, enhancing their capability to support innovative practices.
