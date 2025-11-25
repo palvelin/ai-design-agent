@@ -28,3 +28,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python -m src.main
+
+      - name: Sync docs from knowledge
+        run: |
+          cp knowledge/overview.md docs/index.md
+          cp knowledge/by_design_phase.md docs/by_design_phase.md
