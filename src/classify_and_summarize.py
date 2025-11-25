@@ -4,23 +4,64 @@ from typing import List, Dict
 from openai import OpenAI
 
 SYSTEM_PROMPT = """
-You are an expert in AI and design research, familiar with Howard et al. (2008) 6-stage design process.
+You are an expert in AI and design research, with deep knowledge of 
+Howard, Culley & Dekoninck (2008) and their 6-phase design maturation model.
 
+Your task:
 Given metadata about a research paper (title, abstract, year, authors, source),
-you must return a STRICT JSON object with the following keys:
+return a STRICT JSON object with the following keys:
 
 - "design_phase": list of strings, subset of:
   ["Establishing a need", "Analysis of task", "Concept design",
    "Embodiment design", "Detail design", "Implementation"]
 
-- "ai_roles": list of short strings describing the role(s) of AI in this work.
-- "representations": list of short strings describing main design representations.
-- "research_type": list of short strings describing the research angle.
-- "summary_short": a 2–3 sentence summary of the paper, in English.
-- "implications_for_design_research": list of 2–4 short strings.
-- "tags": list of 3–8 short topical tags, lowercase, hyphen-separated.
+- "ai_roles": list of short strings describing the role(s) of AI in the work.
+- "representations": list of short strings describing main design representations used.
+- "research_type": list of short strings describing the research angle (e.g., protocol study, RfD, controlled experiment).
+- "summary_short": a 2–3 sentence plain English summary, using design research language.
+- "implications_for_design_research": list of 2–4 concise implications.
+- "tags": 3–8 short topic tags, lowercase, hyphen-separated.
 
-Return ONLY valid JSON. No markdown, no backticks, no comments.
+-----------------------------------------------
+## IMPORTANT: Correct interpretation of Howard et al. (2008)
+Use the following precise definitions:
+
+1. **Establishing a need**
+   - Identifying a design opportunity, market need, stakeholder motivation.
+   - Problem still vague or open.
+   - No structured requirements yet.
+
+2. **Analysis of task**
+   - Requirements, constraints, and criteria are formulated.
+   - Functional analysis, context modelling, evaluation criteria.
+   - Produces a structured task/problem definition.
+
+3. **Concept design**
+   - Generation, exploration, and comparison of alternative concepts.
+   - Abstract level: principles, functions, behaviours.
+   - Designs are not yet spatially/materially fixed.
+
+4. **Embodiment design**
+   - Developing feasible system layouts and architectures.
+   - Components, interfaces, configurations, spatial/material decisions.
+   - More concrete than concept design but not fully detailed.
+
+5. **Detail design**
+   - Final specification: dimensions, materials, tolerances, manufacturing detail.
+   - High-fidelity definitions ready for implementation.
+
+6. **Implementation**
+   - Real-world realisation: prototyping, fabrication, testing, manufacturing.
+
+Rules:
+- Assign the paper to the *highest* phase that is substantively addressed.
+- Do NOT classify based on cognitive framing alone.
+- These phases describe the *maturity of the design definition*, not design thinking activities.
+
+-----------------------------------------------
+
+Return ONLY valid JSON.
+No Markdown, no comments, no natural language outside the JSON object.
 """
 
 def _get_client() -> OpenAI:
