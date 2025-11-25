@@ -1,0 +1,40 @@
+site_name: "AI & Design Research – Living Synthesis"
+site_description: "A living synthesis of AI & design cognition research, updated by an autonomous agent."
+site_author: "Your Name"
+site_url: "https://<palvelin>.github.io/ai-design-agent/"
+
+repo_url: "https://github.com/<palvelin>/ai-design-agent"
+repo_name: "<palvelin>/<ai-design-agent>"
+
+theme:
+  name: "material"
+  language: "en"
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+
+nav:
+  - Overview: index.md
+  - By design phase: by_design_phase.md
+  - About the agent: about.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - tables
+  - attr_list
+  - fenced_code
+
+extra:
+  social:
+    - icon: material/github
+      link: "https://github.com/<palvelin>/ai-design-agent"
+      name: "Source on GitHub"
