@@ -3,7 +3,11 @@ name: AI Design Agent (daily)
 on:
   schedule:
     - cron: "0 7 * * *"   # joka päivä 07:00 UTC (~09:00 Helsinki)
-  workflow_dispatch:       # mahdollisuus ajaa käsin GitHubin napista
+
+  push:
+    branches: [ main ]
+    
+  workflow_dispatch:     # mahdollisuus ajaa käsin GitHubin napista
 
 jobs:
   run-agent:
